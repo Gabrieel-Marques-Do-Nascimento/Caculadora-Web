@@ -1,26 +1,33 @@
 
-body{
+*{
     padding: 0%;
     margin: 0%;
 }
-
+body{
+  display: block;
+  margin: auto;
+}
 
 main{
-    max-width: 600px;
+margin:auto;
+    max-width: 400px;
+    max-height: 400px;
     margin: 15px;
-    display: block;
+    display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(5,auto);
-    grid-template-areas: 
-    "input input input "
-    "button button button"
-    "button button button"
-    
 }
 input{
+  
   grid-column: 1/-1;
-   width: 30vw;
+  grid-row: 1/2;
+  
 }
 button{
-    
+
+    grid-column: auto;
+    height: 30px;
+}
+button:hover{
+  background:gray;
 }
