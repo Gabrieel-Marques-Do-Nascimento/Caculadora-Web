@@ -11,12 +11,14 @@ main{
     display: block;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(5,auto);
-    
+    grid-template-areas: 
+    "input input input "
+    "button button button"
+    "button button button"
     
 }
 input{
   grid-column: 1/-1;
-  grid-row: 1/2;
    width: 30vw;
 }
 button{
