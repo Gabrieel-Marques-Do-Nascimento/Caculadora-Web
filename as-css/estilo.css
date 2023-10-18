@@ -7,27 +7,57 @@ body{
   display: block;
   margin: auto;
 }
-
+div.center{
+ 
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50% ,-50%);
+}
+div > h1 {
+  background-color: black;
+  padding: 5px;
+  color: white;
+  
+   font-size: 1em;
+}
 main{
-margin:auto;
-    max-width: 400px;
+
+  display: grid;
+  /* flex-direction: row; */
+
+    max-width: 600px;
     max-height: 400px;
-    margin: 15px;
-    display: grid;
+    /* justify-content: space-between;
+    flex-wrap: wrap; */
+    gap: 5px;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(5,auto);
+  grid-auto-rows: auto;
+  border: solid black 1px;
 }
 input{
-  
-  grid-column: 1/-1;
+  border-radius: 30px;
+  border: none;
+  width: 95%;
+  height: 30px;
+ 
+  padding:0 0 0 10px;
+grid-column: 1/-1;
   grid-row: 1/2;
   
 }
-button{
 
-    grid-column: auto;
-    height: 30px;
+button{
+border-radius: 30px;
+    
+ height: 30px;
 }
 button:hover{
   background:gray;
+}
+#c{
+  color: red;
+}
+button:nth-child(1){
+ 
 }

@@ -1,39 +1,57 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="/as-css/estilo.css" />
-  </head>
-  <body>
-    <h1>Calculadora Simples</h1>
+      <head>
+            <meta charset="UTF-8" />
+            <meta
+                  name="viewport"
+                  content="width=device-width, initial-scale=1.0"
+            />
+            <title>Document</title>
+            <link rel="stylesheet" href="/as-css/estilo.css" />
+      </head>
+      <body>
+            <div class="center">
+                  <h1>Calculadora Simples</h1>
+                  <main>
+                        <input
+                              type="number"
+                              name="nn"
+                              id="inn"
+                              placeholder="digitando.."
+                              value=" "
+                        />
+                        <button id="c">C</button>
+                        <button>()</button>
+                        <button>%</button>
+                        <button>/</button>
 
-    <main>
-      <input type="number" name="nn" id="inn" :) />
+                        <button>7</button>
+                        <button>8</button>
+                        <button>9</button>
+                        <button>X</button>
+                        <button>4</button>
+                        <button>5</button>
+                        <button>6</button>
+                        <button>-</button>
+                        <button>1</button>
+                        <button>2</button>
+                        <button>3</button>
+                        <button>+</button>
+                        <button>-/+</button>
+                        <button>0</button>
+                        <button>,</button>
+                        <button>=</button>
+                  </main>
+            </div>
 
-      <button style="color:red">C</button>
-      <button>()</button>
-      <button>%</button>
-      <button>/</button>
-      <button>7</button>
-      <button>8</button>
-      <button>9</button>
-      <button>4</button>
-      <button>5</button>
-      <button>5</button>
-      <button>1</button>
-      <button>2</button>
-      <button>3</button>
-      <button>-/+</button>
-      <button>0</button>
-      <button>,</button>
-      <button>=</button>
-      <button>b</button>
-      <button>b</button>
-      <button>b</button>
-    </main>
+            <script src="scrept/code.js"></script>
+            <script>
 
-    <script src="scrept/code.js"></script>
-  </body>
+              function numeros(Numero) {
+                input = document.querySelector("input");
+                input.innerHTML= `${Numero}`
+              }
+
+            </script>
+      </body>
 </html>
