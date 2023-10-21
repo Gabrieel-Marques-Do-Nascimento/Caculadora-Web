@@ -13,6 +13,8 @@ div.center{
   top: 50%;
   right: 50%;
   transform: translate(50% ,-50%);
+  width: 90%;
+  height: 80%;
 }
 div > h1 {
   background-color: black;
@@ -27,7 +29,7 @@ main{
   /* flex-direction: row; */
 
     max-width: 600px;
-    max-height: 400px;
+    height: 80%;
     /* justify-content: space-between;
     flex-wrap: wrap; */
     gap: 5px;
@@ -36,11 +38,12 @@ main{
   border: solid black 1px;
 }
 input{
+
   border-radius: 30px;
   border: none;
   width: 95%;
-  height: 30px;
- 
+  height: 15vh;
+ font-size: 2em;
   padding:0 0 0 10px;
 grid-column: 1/-1;
   grid-row: 1/2;
@@ -48,12 +51,17 @@ grid-column: 1/-1;
 }
 
 button{
+  transition: all 0.2s;
+  font-size: 3em;
 border-radius: 30px;
-    
- height: 30px;
+  width: auto;
+ height: auto;
+ 
 }
 button:hover{
   background:gray;
+  color:white;
+  text-shadow:1px 2px 2px black;
 }
 #c{
   color: red;
